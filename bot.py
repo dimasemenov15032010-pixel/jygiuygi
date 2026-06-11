@@ -55,11 +55,11 @@ from telegram.ext import (
 
 # ─────────────────────────── КОНФИГУРАЦИЯ ────────────────────────────────────
 
-BOT_TOKEN = os.getenv("BOT_TOKEN", "7903572178:AAG8YwkrEPvxJH9Yc6PHzMdEoCG7RfjO0k8")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 # ID главной (управляющей) группы — укажите сюда chat_id вашей главной группы.
 # Команда «Стата бота» будет доступна только из неё (для ранга 3+).
-MAIN_GROUP_ID: int = int(os.getenv("MAIN_GROUP_ID", "0"))  # 0 = не задан
+MAIN_GROUP_ID: int = int(os.getenv("MAIN_GROUP_ID"))  # 0 = не задан
 
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
